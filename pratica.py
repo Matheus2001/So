@@ -8,10 +8,10 @@ rfilhopai, wfilhopai = os.pipe()
 opcao = ""
 while opcao != "q":
 	opcao = input("""
-    Digite a para a calc;
-    Digite b para o firefox
-    Digite c para o mousepad;
-    Digite d para sair:""")
+    	Digite a para a calc;
+    	Digite b para o firefox
+    	Digite c para o mousepad;
+    	Digite d para sair:""")
 	
 	if opcao == "a":
 		rpaifilho, wpaifilho = os.pipe()
@@ -63,5 +63,5 @@ while opcao != "q":
 			newpid=os.fork()
 			if newpid == 0:
 				os.execve(mousepad[0], mousepad, os.environ)
-	else: print("Thank you")	
+	else: print("Thank you sir ")	
                         
